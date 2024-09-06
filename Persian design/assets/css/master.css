@@ -1,0 +1,95 @@
+/********** Start: Font Face **********/
+@font-face {
+    font-family: "yekan bakh";
+    src: url("../../public/fonts/yaken-bakh/YekanBakhFaNum02Thin.woff");
+    font-weight: 100;
+}
+/********** End: Font Face **********/
+
+/********** Start: Body Styles **********/
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: linear-gradient(135deg, #09051d, #8D58BF);
+    color: #fff;
+    height: 100vh;
+    font-family: "yekan bakh";
+}
+/********** End: Body Styles **********/
+
+/********** Start: Form Styles **********/
+form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255 255 255 / 14%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Responsive Form Width */
+@media (max-width: 992px) {
+    form {
+        width: 60%;
+    }
+}
+@media (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+}
+@media (max-width: 576px) {
+    form {
+        width: 100%;
+    }
+}
+/********** End: Form Styles **********/
+
+/********** Start: Heading Style **********/
+h1 {
+    font-size: 24px;
+}
+/********** End: Heading Style **********/
+
+/********** Start: Input Group Styles **********/
+.input-group {
+    width: 100%;
+}
+
+/* Number Input Styles */
+input[type="number"] {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Removing default spinner */
+}
+
+input[type="number"]:focus {
+    outline: 3px solid hsl(267, 83%, 26%); /* Custom focus outline */
+}
+/********** End: Input Group Styles **********/
+
+/********** Start: Button Styles **********/
+button {
+    background-color: #3d0b79;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "yekan bakh";
+}
+button:hover {
+    background-color: #8D58BF;
+}
+/********** End: Button Styles **********/
+
+/********** Start: Result Text Style **********/
+.result {
+    font-size: 18px;
+}
+/********** End: Result Text Style **********/

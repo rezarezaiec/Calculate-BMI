@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rezarezaei</title>
+    <link rel="stylesheet" href="./assets/plugins/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/master.css">
+</head>
+
+<body>
+
+
+    <!-- Start: BMI Calculator Container -->
+    <div class="container d-flex justify-content-center align-items-center">
+        <!-- Start: BMI Calculator Form -->
+        <form class="calc-bmi p-3 py-5 d-flex flex-column align-items-center text-white">
+
+            <!-- Start: Height Input Group -->
+            <div
+                class="row form-group mt-4 text-center text-sm-end w-100 flex-column-reverse flex-sm-row justify-content-center align-items-center">
+                <div class="col-12 col-sm-8">
+                    <input class="form-range mt-3 mt-sm-0" type="range" min="0" max="250" id="height" name="height"
+                        value="0">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <label for="height" class="form-label pe-2">Height(cm)</label>
+                    <span id="height-val"></span>
+                </div>
+            </div>
+            <!-- End: Height Input Group -->
+
+            <!-- Start: Weight Input Group -->
+            <div
+                class="row form-group mt-4 text-center text-sm-end w-100 flex-column-reverse flex-sm-row justify-content-center align-items-center">
+                <div class="col-12 col-sm-8">
+                    <input class="form-range mt-3 mt-sm-0" type="range" min="0" max="250" id="weight" name="weight"
+                        value="0">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <label for="weight" class="form-label pe-2">Weight(kg)</label>
+                    <span id="weight-val"></span>
+                </div>
+            </div>
+            <!-- End: Weight Input Group -->
+
+            <!-- Start: Result Group (Hidden initially) -->
+            <div class="row result-group mt-4 text-center" style="display: none;">
+                <div class="col-12">
+                    <p id="result"></p>
+                    <p id="category"></p>
+                    <p id="warning" class="text-danger"></p>
+                </div>
+            </div>
+            <!-- End: Result Group -->
+            <!-- Start: Reset Button (Hidden initially) -->
+            <div class="row btn-group mt-2">
+                <div class="col-12">
+                    <button type="button" class="btn reset-btn py-1 px-3" id="reset-btn" style="display: none;">Reset</button>
+                </div>
+            </div>
+            <!-- End: Reset Button -->
+        </form>
+        <!-- End: BMI Calculator Form -->
+    </div>
+    <!-- End: BMI Calculator Container -->
+
+
+
+
+
+
+    <script src="./assets/plugins/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

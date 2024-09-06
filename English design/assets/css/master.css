@@ -1,0 +1,63 @@
+/********** Start: Body Styling **********/
+body {
+    background: linear-gradient(135deg, #09051d, #8D58BF);
+}
+/********** End: Body Styling **********/
+
+/********** Start: Container Styling **********/
+.container {
+    height: 100vh;
+}
+/********** End: Container Styling **********/
+
+/********** Start: BMI Calculator Form Styling **********/
+.calc-bmi {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/**** Start: Media Query for Smaller Screens ****/
+@media (max-width: 768px) {
+    .calc-bmi {
+        width: 100%;
+    }
+}
+/**** End: Media Query for Smaller Screens ****/
+/********** End: BMI Calculator Form Styling **********/
+
+/********** Start: Range Input Thumb Styling **********/
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #3c0790;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/********** End: Range Input Thumb Styling **********/
+
+/********** Start: Result Group Styling **********/
+.result-group {
+    display: none;
+    width: 100%;
+}
+/********** End: Result Group Styling **********/
+/********** Start: Reset Button Styling **********/
+.reset-btn {
+    background-color: #3c0790;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#reset-btn:hover {
+    background-color: #45178d;
+}
+/********** End: Reset Button Styling **********/

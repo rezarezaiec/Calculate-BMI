@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rezarezaei-T12.1</title>
+
+    <!-- Start: Linking external CSS files -->
+    <link rel="stylesheet" href="./assets/plugins/css/rtl/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/master.css">
+    <!-- End: Linking external CSS files -->
+</head>
+
+<body dir="rtl">
+
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+        <!-- Start: BMI Calculation Form -->
+        <form id="bmiForm" class="p-4" novalidate>
+            <!-- Start: Form Title -->
+            <h1 class="mb-4">محاسبه (BMI)</h1>
+            <!-- End: Form Title -->
+
+            <!-- Start: Height Input -->
+            <div class="row input-group text-start">
+                <div class="col-12">
+                    <label for="height" class="mb-2">قد (سانتی‌متر):</label>
+                </div>
+                <div class="col-12">
+                    <input type="number" id="height" min="1" class="py-1 px-2 mb-4 rounded-2">
+                </div>
+            </div>
+            <!-- End: Height Input -->
+
+            <!-- Start: Weight Input -->
+            <div class="row input-group text-start">
+                <div class="col-12">
+                    <label for="weight" class="mb-2">وزن (کیلوگرم):</label>
+                </div>
+                <div class="col-12">
+                    <input type="number" id="weight" min="1" class="py-1 px-2 mb-4 rounded-2">
+                </div>
+            </div>
+            <!-- End: Weight Input -->
+
+            <!-- Start: Form Buttons (Calculate and Reset) -->
+            <div class="btn-group w-100 justify-content-center align-items-center gap-3 mt-3">
+                <button type="submit" class="py-2 px-4 rounded-2 text-white">محاسبه</button>
+                <button type="button" class="py-2 px-4 rounded-2 text-white">بازنشانی</button>
+            </div>
+            <!-- End: Form Buttons (Calculate and Reset) -->
+
+            <!-- Start: BMI Result Display -->
+            <div id="result" class="result mt-4">
+                <span id="resultText"></span>
+                <span id="bmiCategory"></span>
+            </div>
+            <!-- End: BMI Result Display -->
+            <!-- Start: Error Message Display -->
+            <div id="error" class="text-danger mt-3" style="display: none;"></div>
+            <!-- End: Error Message Display -->
+        </form>
+        <!-- End: BMI Calculation Form -->
+    </div>
+
+    <!-- Start: Including JS Scripts -->
+    <script src="./assets/plugins/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <!-- End: Including JS Scripts -->
+</body>
+
+</html>
