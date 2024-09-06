@@ -26,6 +26,8 @@ This project is built with:
 - Two design styles: Iranian and English
 - Responsive design using Bootstrap
 - Dynamic calculations with JavaScript
+- **Form validation**: Ensures that the user inputs are valid (e.g., height and weight must be numbers and within reasonable ranges).
+
 
 ## Installation
 Steps to install and run the project.
